@@ -95,6 +95,8 @@ function resizeVideoContainer() {
 }
 
 
+
+window.onload = setInterval(resizeVideoContainer, 1000);
 resizeVideoContainer();
 
 window.addEventListener("resize", resizeVideoContainer);
