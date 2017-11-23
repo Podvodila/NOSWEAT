@@ -111,5 +111,5 @@ videoPlayButton.onclick = function() {
 	resizeVideoContainer();
 
 	var fullSizeVideo = document.querySelector("#direct-video");
-	fullSizeVideo.setAttribute("src", "https://player.vimeo.com/video/194421519?api=1&loop=0&mute=0&background=1&autoplay=1");
+	fullSizeVideo.setAttribute("src", "https://player.vimeo.com/video/194421519?api=1&loop=0&mute=0&background=0&autoplay=1");
 } 
