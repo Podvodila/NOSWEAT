@@ -1178,6 +1178,10 @@ body {
 		margin-top: 30px;
 	}
 
+	.contacts>div {
+		margin-left: 0px;
+	}
+
 	.features-container li {
 		padding-left: 10px;
 	}
