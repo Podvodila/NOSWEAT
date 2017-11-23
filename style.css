@@ -910,10 +910,15 @@ body {
 
 .co-info ul {
 	display: flex;
+	margin-right: 4px;
 }
 
 .co-info ul li {
-	margin-left: 23px;
+	margin-left: 19px;
+}
+
+.co-info ul li:first-child {
+	margin-right: 5px;
 }
 
 
