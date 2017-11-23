@@ -574,9 +574,15 @@ body {
     margin-left: -5px;
 }
 
-.helmet-photo {
-	/*display: block;*/
-}
+.helmets-wrap .helmets:first-child .helmet-photo img{
+	margin-top: 30px; 
+	margin-bottom: -30px;
+} 
+
+.helmets-wrap .helmets:nth-child(2) .helmet-photo img{
+	 margin-top: 25px; 
+	 margin-bottom: -25px;
+} 
 
 .helmet-photo img {
 	width: 100%;
@@ -615,6 +621,8 @@ body {
 	margin-left: 7px;
 }
 
+
+
 .helmet-bottom a {
 	font-family: 'Open Sans';
 	font-size: 28px;
@@ -627,7 +635,7 @@ body {
 
 .lanes {
 	position: absolute;
-	top: 90px;
+	top: 80px;
 	right: 0px;
 	z-index: 4;
 }
@@ -937,6 +945,20 @@ body {
 		flex-direction: column;
 		justify-content: space-around;
 	}
+
+	.helmets-wrap .helmets:first-child .helmet-photo img{
+	margin-top: 0px; 
+	margin-bottom: 0px;
+} 
+
+	.helmets-wrap .helmets:nth-child(2) .helmet-photo img{
+		 margin-top: 0px; 
+		 margin-bottom: 0px;
+	} 
+
+	.lanes {
+		top: 70px;
+	}
 }
 
 @media (max-width: 1500px) {
@@ -1044,6 +1066,10 @@ body {
 	.co-info,
 	.foot-content {
 		padding: 0px 10px;
+	}
+
+	.lanes {
+		top: 30px;
 	}
 }
 
