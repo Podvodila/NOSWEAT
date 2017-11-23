@@ -754,6 +754,10 @@ body {
 	margin-bottom: 26px;
 }
 
+.contact-title p {
+	line-height: 20px;
+}
+
 .contacts-wrap h3 {
 	margin-bottom: 10px;
 }
