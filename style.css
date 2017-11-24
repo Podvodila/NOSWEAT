@@ -205,8 +205,12 @@ body {
 
 .head-menu-container #basket {
 	margin-left: -190px;
+	transition: .2s;
 }
 
+.head-menu-container #basket:hover {
+	filter: invert();
+}
 
 
 .visible {
@@ -837,7 +841,13 @@ body {
 	border-radius: 0px 3px 3px 0px;
 	background-position: center;
 	cursor: pointer;
+	transition: .1s;
 }
+
+.input-container button:hover {
+	background-color: #e5e5e5;
+	border-color: #e5e5e5;
+	}
 
 .foot-content .about {
 	margin-left: 13px;
@@ -934,6 +944,13 @@ body {
 }
 
 
+
+@media(max-width: 1810px) {
+	.wrap-feat ul {
+		margin-right: 0px;
+	}
+}
+
 @media(max-width: 1772px) {
 	.video-block-container {
 		height: 100%;
@@ -965,6 +982,12 @@ body {
 	}
 }
 
+@media (max-width: 1570px) {
+	.advantages-wrap {
+		margin: 0px 40px;
+	}
+}
+
 @media (max-width: 1500px) {
 	.head-menu-container #basket {
 		margin-left: 0px;
@@ -992,6 +1015,10 @@ body {
 	.advantages-wrap li:last-child {
 		margin-left: 0px;
 		margin-right: 0px;
+	}
+
+	.features-container li {
+		padding-left: 40px;
 	}
 	
 	.wrap-feat ul {
@@ -1081,6 +1108,15 @@ body {
 		padding: 0px 10px;
 	}
 
+	.wrap-feat {
+		flex-wrap: nowrap;
+	}
+
+	.wrap-feat ul {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
 	.lanes {
 		top: 30px;
 	}
@@ -1136,6 +1172,10 @@ body {
 	#main-logo {
 		width: 237px;
 		height: 27px;
+	}
+
+	.features-container .wrap {
+		align-items: flex-start;
 	}
 
 	.head-menu-container .wrap {
