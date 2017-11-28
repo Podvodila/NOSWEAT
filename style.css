@@ -212,6 +212,18 @@ body {
 	filter: invert();
 }
 
+.hamburger-button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: none;
+	background-color: transparent;
+	outline: none;
+	border: 0;
+	font-size: 40px;
+	color: #fff;
+}
+
 
 .visible {
 	opacity: 1;
@@ -742,6 +754,7 @@ body {
 .video-overlay button:hover {
 	color: #056ab2;
 	border-color: #056ab2;
+	background-color: #056ab2;
 }
 
 .background-helper {
@@ -1042,6 +1055,14 @@ body {
 		margin-left: 0px;
 	}
 
+	.brush-text {
+		font-size: 100px;
+	}
+
+	.bebas-text {
+		font-size: 45px;
+	}
+
 	.features-container {
 		height: 100%;
 	}
@@ -1079,16 +1100,13 @@ body {
 
 	.video-wrap {
 		flex-direction: column;
+		padding-left: 10px;
+		align-items: center;
 	}
 
 	.video {
-		align-self: flex-start;
 		margin-top: 40px;
 		margin-left: 0px;
-	}
-
-	.video-wrap {
-		padding-left: 10px;
 	}
 
 	.helmet-bottom h2{
@@ -1120,15 +1138,19 @@ body {
 	.lanes {
 		top: 30px;
 	}
+
+
 }
 
 @media (max-width: 1220px) {
 	.head-menu-container .wrap {
-	flex-direction: column;
+		flex-direction: column;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	.head-menu-container {
-		height: 150px;
+		height: auto;
 	}
 
 	.main-slide-buttons {
@@ -1137,6 +1159,16 @@ body {
 
 	.slide-container.second-slider .slide-title {
 		margin-left: 10px;
+	}
+}
+
+@media (max-width: 850px) {
+	.brush-text {
+		font-size: 70px;
+	}
+
+	.bebas-text {
+		font-size: 30px;
 	}
 }
 
@@ -1165,10 +1197,6 @@ body {
 		padding-bottom: 20px;
 	}
 
-	.head-menu-container {
-		height: 250px;
-	}
-
 	#main-logo {
 		width: 237px;
 		height: 27px;
@@ -1176,6 +1204,8 @@ body {
 
 	.features-container .wrap {
 		align-items: flex-start;
+		margin-top: 10px;
+    	margin-bottom: 10px;
 	}
 
 	.head-menu-container .wrap {
@@ -1281,13 +1311,45 @@ body {
 	.features-container li {
 		padding-left: 10px;
 	}
-}
 
+	.head-menu-container .wrap {
+		position: absolute;
+		transform: scaleY(0.1);
+		opacity: 0;
+		transition: 0.5s;
+	}
+
+	.hamburger-button { 
+		display: block;
+	}
+
+	.wrap.ham-menu {
+		position: static;
+		opacity: 1;
+		transform: scaleY(1);
+	}
+
+	.video-wrap {
+		align-items: flex-start;
+	}
+
+	.bebas-text,
+	.feature-title,
+	.video-text-title,
+	.video-text-description,
+	.video-list li,
+	.video-price-info,
+	.slide-title,
+	.co-info p {
+		line-height: 1.3em !important;
+	}
+}
 
 
 .slider-for-mobile {
 	animation: slide-moving 25s infinite linear;
 }
+
 
 @keyframes slide-moving {
 	0% { transform: translateX(0px); }

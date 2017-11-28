@@ -113,3 +113,18 @@ videoPlayButton.onclick = function() {
 	var fullSizeVideo = document.querySelector("#direct-video");
 	fullSizeVideo.setAttribute("src", "https://player.vimeo.com/video/194421519?api=1&loop=0&mute=0&background=0&autoplay=1");
 } 
+
+// открытие меню на телефонах
+
+var hamButt = document.querySelector("#hamburger-button");
+
+hamButt.onclick = function() {
+	var hamMenu = document.querySelector(".wrap");
+	hamMenu.classList.toggle("ham-menu");
+	if(hamButt.innerHTML == "×") {
+		hamButt.innerHTML = "&#9776;";
+		return;
+	}
+	hamButt.innerHTML = "&#215;";
+
+}
