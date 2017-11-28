@@ -222,8 +222,13 @@ body {
 	border: 0;
 	font-size: 40px;
 	color: #fff;
+	cursor: pointer;
+	transition: .1s;
 }
 
+.hamburger-button:hover {
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.2);
+}
 
 .visible {
 	opacity: 1;
